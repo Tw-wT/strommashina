@@ -1,16 +1,7 @@
 import Device from "../Device/index"
 import Link from "next/link"
 
-export default function Content() {
-
-	const articles = [
-		{ id: 1, title: "Строммашина", desc: "ООО «СТРОММАШИНА» основано в 2009 году и является преемником по изготовлению оборудования Симферопольского машиностроительного завода", img: "https://phonoteka.org/uploads/posts/2021-05/1621723797_25-phonoteka_org-p-industrialnii-fon-dlya-prezentatsii-27.jpg" },
-		{ id: 2, title: "Вид деятельности", desc: "Основным видом деятельности является изготовление оборудования для производства керамического кирпича (послепрессовая часть). Это автомат резательный СП-5М для одностадийной резки глиняного бруса пластического формования.", img: "https://static.vecteezy.com/system/resources/previews/000/656/048/original/vector-worker-on-car-factory.jpg", detail: '/sp5m' },
-		{ id: 3, title: "Оборудование", desc: "Предприятие оснащено универсальным оборудованием,позволяющим изготавливать сложные детали и узлы различных машин и механизмов.", img: "https://f.nordiskemedier.dk/2f8j8w4fww2e81cb.jpg" },
-
-		{ id: 4, title: "Коллектив", desc: "Своевременное и качественное выполнение договоров обеспечивает коллектив,состоящий из специалистов высокой квалификации.", img: "https://www.zingoy.com/blog/wp-content/uploads/2020/04/imgonline-com-ua-resize-93ooyUiUJk1zepqP-compressed.jpg" }
-	]
-
+export default function Content({ articles }) {
 	return (
 		<Device>
 			{({ isMobile }) => {
