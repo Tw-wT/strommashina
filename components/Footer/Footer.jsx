@@ -1,8 +1,8 @@
 
 
-export default function Footer() {
+export default function Footer({ customClass }) {
 	return (
-		<footer className="bg-gray-200 text-center lg:text-left">
+		<footer className={`bg-gray-200 text-center lg:text-left w-full ${customClass ? customClass : ''}`}>
 			<div className="text-gray-700 text-center p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
 				© 2022 Copyright:
 				<a className="text-gray-800" href="https://localhost:3000/"> Строммашина</a>

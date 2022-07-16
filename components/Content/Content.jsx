@@ -1,5 +1,6 @@
 import Device from "../Device/index"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Content({ articles }) {
 	return (
@@ -7,7 +8,7 @@ export default function Content({ articles }) {
 			{({ isMobile }) => {
 				if (isMobile) {
 					return (
-						<section className="container mx-auto px-6 p-10 max-w-screen-xl">
+						<section className="container mx-auto px-6 p-10 max-w-screen-lg">
 							{articles.map(article => (
 								<div className="flex items-center flex-wrap mb-20 gap-3.5" key={article.id}>
 									<div className="w-full md:w-1/2">
@@ -24,7 +25,7 @@ export default function Content({ articles }) {
 					)
 				}
 				return (
-					<section className="container mx-auto px-6 p-10 max-w-screen-xl">
+					<section className="container mx-auto px-6 p-10 max-w-5xl">
 
 						{articles.map(article => (
 							article.id % 2 === 0 ?
